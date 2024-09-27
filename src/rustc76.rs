@@ -1,4 +1,4 @@
-//! This file containers the scanner's core operations.
+//! This module contains the scanner's core operations.
 
 extern crate rustc_ast;
 extern crate rustc_codegen_ssa;
@@ -43,7 +43,7 @@ use rustc_span::FileName;
 ///
 /// Here the arguments are the same as rustc would accept, and returns a
 /// [`CheckInfo`] struct which containers the information about the used RUFs.
-pub fn run_scanner(args: &Vec<String>) -> interface::Result<CheckInfo> {
+pub fn run_scanner(args: &[String]) -> interface::Result<CheckInfo> {
     let mut callbacks = TimePassesCallbacks::default();
 
     run_compiler(args, &mut callbacks)

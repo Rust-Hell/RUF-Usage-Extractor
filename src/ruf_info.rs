@@ -1,3 +1,6 @@
+//! This module contains the data structures used to store the information 
+//! about the rufs used in the crate.
+
 #[derive(Debug)]
 pub struct UsedRufs(Vec<String>);
 
