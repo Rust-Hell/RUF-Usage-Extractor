@@ -1,4 +1,4 @@
-# RUF-Extractor
+# RUF-Usage-Extractor
 This projects allows you to scan your crate's source and extrace the used unstable features based on your own building configuration.
 
 ## RUF-Scanner
